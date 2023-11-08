@@ -11,6 +11,10 @@ public class Project1
         while(exit == 0)
         {
             String inst = sc.nextLine();
+            if(inst.length()==0)
+            {
+                continue;
+            }
             for (int i = 0;i < 10;++i)          // history buffer 채우기
             {
                 if (sArr[i] == null)

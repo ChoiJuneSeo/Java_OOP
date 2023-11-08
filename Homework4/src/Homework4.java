@@ -15,16 +15,15 @@ public class Homework4 {
     static int gcd(int a, int b)
     {
         if( a == 0 )
-        {
-            return a;
-        }
+        {return a;}
+
         if(a % b == 0)
-        {
-            return b;
-        }
+        {return b;}
+
         int temp = a%b;
         a = b;
         b = temp;
+
         return gcd(a,b);
     }
     static int forgcd(int a, int b)
